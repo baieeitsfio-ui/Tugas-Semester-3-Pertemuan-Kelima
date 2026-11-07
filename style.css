@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Kotak utama aplikasi */
+.container {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+
+    width: 360px;
+    max-width: calc(100% - 72px);
+
+    text-align: center;
+}
+
+/* Form pencarian */
+form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+/* Input username */
+input[type="text"] {
+    flex: 1;
+    min-width: 0;
+
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+
+    font-size: 9.5pt;
+}
+
+/* Tombol cari */
+button {
+    padding: 8px 16px;
+
+    background-color: #2ea44f;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Efek ketika tombol disentuh */
+button:hover {
+    background-color: #2c974b;
+}
+
+/* Menyembunyikan elemen */
+.hidden {
+    display: none;
+}
+
+/* Tampilan loading */
+#loading {
+    color: #64748b;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+/* Tampilan pesan error */
+#error-message {
+    color: #dc2626;
+    font-size: 9.5pt;
+    margin-bottom: 12px;
+}
+
+/* Container profil */
+#profile-container {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 16px;
+}
+
+/* Foto profil */
+#profile-avatar {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+    border: 2px solid #cbd5e1;
+    object-fit: cover;
+}
+
+/* Nama pengguna */
+#profile-name {
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+/* Bio pengguna */
+#profile-bio {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Informasi repositori */
+.profile-info {
+    margin: 14px 0;
+    color: #334155;
+}
+
+/* Link profil GitHub */
+#profile-link {
+    display: inline-block;
+
+    background-color: #24292f;
+    color: white;
+
+    padding: 9px 14px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Efek hover link */
+#profile-link:hover {
+    background-color: #444c56;
+}
+
+/* Tampilan untuk layar kecil */
+@media (max-width: 480px) {
+    .container {
+        width: auto;
+        margin: 16px;
+    }
+}
